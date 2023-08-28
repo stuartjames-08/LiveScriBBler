@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+ }
+
+ header{
+    padding: 1%;
+    background-color: #186CA3;
+    color: white;
+    }
+
+.bckgrd-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(\images\background.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .logo{
+    position: absolute;
+    top:0px;
+    left: 8px;
+    font-size: 40px;        
+    color: blue;   
+    font-family: montez; 
+}
+
+.logo-subheading{
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    font-size: 15px;
+    font-family: Ubuntu Mono;
+}
+.btn-signUp{
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    margin: 5px 5px 5px 5px;
+    padding: 1%;
+    color:white;
+    background-color: #008CBA;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-signIn{
+    position: absolute;
+    top: 16px;
+    right: 100px;
+    margin: 5px 5px 5px 5px;
+    padding: 1%;
+    color:white;
+    background-color: #008CBA;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.head-bar{
+border: 10px;
+border-color: aliceblue;
+}
+
+.all-post-btn{
+    position: absolute;
+    bottom: 150px;
+    left:500px;
+    margin: 5px 5px 5px 5px;
+    padding: 1%;
+    color:white;
+    background-color: hsl(64, 100%, 36%);
+    border:1%;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-color: white;
+    flex-direction: row;
+}
+.create-post-btn{
+    position: absolute;
+    bottom: 150px;
+    left:600px;
+    margin: 5px 5px 5px 5px;
+    padding: 1%;
+    color:white;
+    background-color: hsl(64, 100%, 36%);
+    border:1%;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-color: white;
+}
