@@ -4,9 +4,9 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
-    <img class="bckgrd-img" src='D:\LiveScriBBler\images\background.jpg'/>
-    <link rel="stylesheet" href="D:\LiveScriBBler\styles\index.css" />
-    <link rel="stylesheet" href="D:\LiveScriBBler\styles\common.css" />
+    <img class="bckgrd-img" src='\images\background.jpg'/>
+    <link rel="stylesheet" href="\styles\index.css" />
+    <link rel="stylesheet" href="\styles\common.css" />
     
 </head>
 
@@ -20,18 +20,46 @@
                     <a class="logo-subheading">Explore, Imagine, Create</a>
                 </div>
                 <div class="btnUsercredintial">
-                    <button class="btn-signUp">Sign Up</button>
+                    <button class="btn-signUp" onclick="openSignUp()">Sign Up</button>
                     <button class="btn-signIn">Sign In</button>
                 </div>
-                <div>
-                    <button class="all-post-btn">All Posts</button>
-                    <button class="create-post-btn">Create Post</button>
-                </div>
+            </div> 
+        </div>
+        <div class="blog-container">
+            <div>
+                <button class="all-post-btn">All Posts</button>
+                <button class="create-post-btn">Create Post</button>
             </div>
+        </div>
+    </div>
+
+    <div id="SignUpModal" class="SignUpModal">
+        <div class="modal-content">
+            <div class="flex-container">
+                <h1 class="modal-heading">Get Started</h1>
+                <span onclick="closeModule(SignUpModal)" class="close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+            <hr class="modal-horizontal-rule">
+            <form class="modal-form">
+                <label for="name" class="modal-label">Name</label>
+                <input type="text" class="modal-textbox" name="name" placeholder="Enter your name" required>
+                <label for="username" class="modal-label">Username</label>
+                <input type="text" class="modal-textbox" name="username" placeholder="Enter your username" required>
+                <label for="password" class="modal-label">Password</label>
+                <input type="password" class="modal-textbox" name="password" placeholder="Enter your password"
+                    required>
+                <label for="confirmpassword" class="modal-label">confirm Password</label>
+                <input type="password" class="modal-textbox" name="password" placeholder="Re-enter your password"
+                    required>
+                <button class="btn-modal-submit" type="submit">Sign Up</button>
+            </form>
         </div>
     </div>
     </div>
 
 </body>
-
+<script src="/javascript/index.js"></script>
+<script src="/javascript/common.js"></script>
 </html>
